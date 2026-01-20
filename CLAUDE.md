@@ -77,3 +77,24 @@ Copy `.env.example` to `.env` and configure:
 - Desktop app (Electron + node-pty) - not yet implemented
 - Relay server (Fastify + WebSocket for Fly.io) - not yet implemented
 - Core package for shared crypto, protocol types, Zod schemas - to be extracted
+
+## Development Workflow
+
+Follow these rules when implementing tasks from PLAN.md:
+
+1. **One branch per task** - Create a new feature branch for each task or logical group of related tasks
+2. **Branch naming** - Use descriptive branch names like `feat/core-package-setup` or `feat/relay-server`
+3. **Dependent branches** - If a PR hasn't been merged yet but you need its changes, branch off that PR's branch
+4. **CI must pass** - Before creating a PR, ensure all CI steps pass:
+   ```bash
+   pnpm lint        # ESLint
+   pnpm lint:ws     # Workspace lint (sherif)
+   pnpm format      # Prettier check
+   pnpm typecheck   # TypeScript
+   ```
+5. **PR with summary** - Create a PR with a clear summary of changes when the task is complete
+6. **Update PLAN.md** - Mark completed tasks with `[x]` and update the progress summary table
+
+## Implementation Plan
+
+See `PLAN.md` for the full implementation plan with epics and tasks. Work through tasks in the recommended order, starting with Epic 1 (Core Package).
