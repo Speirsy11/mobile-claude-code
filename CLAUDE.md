@@ -34,7 +34,7 @@ pnpm dev
 
 # Run specific apps
 pnpm dev:next          # Next.js only
-pnpm --filter @acme/expo dev  # Expo only
+pnpm --filter @mcc/expo dev  # Expo only
 
 # Database
 pnpm db:push           # Push Drizzle schema to database
@@ -67,9 +67,9 @@ Copy `.env.example` to `.env` and configure:
 
 ## Architecture Notes
 
-**tRPC Flow:** Apps import `@acme/api` as dev dependency for types only. The API package depends on `@acme/auth` and `@acme/db` for runtime code.
+**tRPC Flow:** Apps import `@mcc/api` as dev dependency for types only. The API package depends on `@mcc/auth` and `@mcc/db` for runtime code.
 
-**Package naming:** All internal packages use `@acme/` prefix. Replace with your own org name using find-and-replace if desired.
+**Package naming:** All internal packages use `@mcc/` prefix. Replace with your own org name using find-and-replace if desired.
 
 **Expo mobile app:** Located at `apps/expo`. Uses Expo Router for navigation and tRPC for API calls to the Next.js backend.
 
