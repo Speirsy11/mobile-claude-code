@@ -47,4 +47,4 @@ export const trpc = createTRPCOptionsProxy<AppRouter>({
   queryClient,
 });
 
-export type { RouterInputs, RouterOutputs } from "@mccapi";
+export type { RouterInputs, RouterOutputs } from "@mcc/api";

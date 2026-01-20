@@ -11,8 +11,8 @@ import {
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
 import type { AppRouter } from "@mcc/api";
-import { ThemeProvider, ThemeToggle } from "@mccui/theme";
-import { Toaster } from "@mccui/toast";
+import { ThemeProvider, ThemeToggle } from "@mcc/ui/theme";
+import { Toaster } from "@mcc/ui/toast";
 
 import appCss from "~/styles.css?url";
 

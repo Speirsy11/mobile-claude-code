@@ -8,18 +8,18 @@ import {
 import { createFileRoute } from "@tanstack/react-router";
 
 import type { RouterOutputs } from "@mcc/api";
-import { CreatePostSchema } from "@mccdb/schema";
-import { cn } from "@mccui";
-import { Button } from "@mccui/button";
+import { CreatePostSchema } from "@mcc/db/schema";
+import { cn } from "@mcc/ui";
+import { Button } from "@mcc/ui/button";
 import {
   Field,
   FieldContent,
   FieldError,
   FieldGroup,
   FieldLabel,
-} from "@mccui/field";
-import { Input } from "@mccui/input";
-import { toast } from "@mccui/toast";
+} from "@mcc/ui/field";
+import { Input } from "@mcc/ui/input";
+import { toast } from "@mcc/ui/toast";
 
 import { AuthShowcase } from "~/component/auth-showcase";
 import { useTRPC } from "~/lib/trpc";

@@ -10,10 +10,10 @@ const config = {
   /** Enables hot reloading for local packages without a build step */
   transpilePackages: [
     "@mcc/api",
-    "@mccauth",
-    "@mccdb",
-    "@mccui",
-    "@mccvalidators",
+    "@mcc/auth",
+    "@mcc/db",
+    "@mcc/ui",
+    "@mcc/validators",
   ],
 
   /** We already do linting and typechecking as separate tasks in CI */

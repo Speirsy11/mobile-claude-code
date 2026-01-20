@@ -21,12 +21,12 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@mcceslint-config": "workspace:*",
-    "@mccprettier-config": "workspace:*",
-    "@mcctsconfig": "workspace:*",
+    "@mcc/eslint-config": "workspace:*",
+    "@mcc/prettier-config": "workspace:*",
+    "@mcc/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@mccprettier-config"
+  "prettier": "@mcc/prettier-config"
 }
