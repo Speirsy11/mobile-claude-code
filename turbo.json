@@ -46,12 +46,17 @@
     }
   },
   "globalEnv": [
-    "POSTGRES_URL",
     "AUTH_DISCORD_ID",
     "AUTH_DISCORD_SECRET",
     "AUTH_REDIRECT_PROXY_URL",
     "AUTH_SECRET",
-    "PORT"
+    "CLEANUP_INTERVAL_MS",
+    "HEARTBEAT_INTERVAL_MS",
+    "HOST",
+    "LOG_LEVEL",
+    "PORT",
+    "POSTGRES_URL",
+    "SESSION_TTL_MS"
   ],
   "globalPassThroughEnv": [
     "NODE_ENV",

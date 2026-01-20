@@ -52,30 +52,30 @@ Create the shared `@mcc/core` package containing crypto, protocol definitions, a
 Build the "blind relay" WebSocket server for message routing.
 
 ### 2.1 Project Setup
-- [ ] Create `apps/relay-server` directory
-- [ ] Set up Fastify with TypeScript
-- [ ] Configure WebSocket plugin (@fastify/websocket)
-- [ ] Add health check endpoint
-- [ ] Set up logging (pino)
+- [x] Create `apps/relay-server` directory
+- [x] Set up Fastify with TypeScript
+- [x] Configure WebSocket plugin (@fastify/websocket)
+- [x] Add health check endpoint
+- [x] Set up logging (pino)
 
 ### 2.2 Session Management
-- [ ] Implement in-memory session store
-- [ ] Session creation on first connection
-- [ ] Session lookup by `session_id`
-- [ ] Session cleanup on disconnect/timeout
-- [ ] Handle session expiration (configurable TTL)
+- [x] Implement in-memory session store
+- [x] Session creation on first connection
+- [x] Session lookup by `session_id`
+- [x] Session cleanup on disconnect/timeout
+- [x] Handle session expiration (configurable TTL)
 
 ### 2.3 WebSocket Routing
-- [ ] Implement connection handler
-- [ ] Parse incoming messages for `session_id` and `role` (desktop/mobile)
-- [ ] Route messages between paired clients
-- [ ] Handle client reconnection
-- [ ] Implement heartbeat/ping-pong for connection health
+- [x] Implement connection handler
+- [x] Parse incoming messages for `session_id` and `role` (desktop/mobile)
+- [x] Route messages between paired clients
+- [x] Handle client reconnection
+- [x] Implement heartbeat/ping-pong for connection health
 
 ### 2.4 Deployment Configuration
-- [ ] Create `Dockerfile` for relay server
-- [ ] Create `fly.toml` configuration
-- [ ] Set up environment variables
+- [x] Create `Dockerfile` for relay server
+- [x] Create `fly.toml` configuration
+- [x] Set up environment variables
 - [ ] Document deployment process
 - [ ] Add rate limiting for abuse prevention
 
@@ -290,11 +290,11 @@ Prepare for production deployment and app distribution.
 | Epic | Status | Progress |
 |------|--------|----------|
 | 1. Core Package | ✅ Complete | 17/17 |
-| 2. Relay Server | Not Started | 0/19 |
+| 2. Relay Server | 🔄 In Progress | 17/19 |
 | 3. Desktop App | Not Started | 0/24 |
 | 4. Mobile App | Not Started | 0/26 |
 | 5. Output Parser | Not Started | 0/10 |
 | 6. Security | Not Started | 0/12 |
 | 7. Testing | Not Started | 0/11 |
 | 8. Deployment | Not Started | 0/11 |
-| **Total** | **In Progress** | **17/130** |
+| **Total** | **In Progress** | **34/130** |
