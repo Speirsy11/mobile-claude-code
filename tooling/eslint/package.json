@@ -24,12 +24,12 @@
     "typescript-eslint": "^8.46.2"
   },
   "devDependencies": {
-    "@mccprettier-config": "workspace:*",
-    "@mcctsconfig": "workspace:*",
+    "@mcc/prettier-config": "workspace:*",
+    "@mcc/tsconfig": "workspace:*",
     "@types/node": "catalog:",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@mccprettier-config"
+  "prettier": "@mcc/prettier-config"
 }

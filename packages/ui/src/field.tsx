@@ -5,8 +5,8 @@ import { useMemo } from "react";
 import { cva } from "class-variance-authority";
 
 import { cn } from "@mcc/ui";
-import { Label } from "@mccui/label";
-import { Separator } from "@mccui/separator";
+import { Label } from "@mcc/ui/label";
+import { Separator } from "@mcc/ui/separator";
 
 export function FieldSet({
   className,

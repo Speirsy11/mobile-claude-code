@@ -44,16 +44,16 @@
     "superjson": "2.2.3"
   },
   "devDependencies": {
-    "@mccapi": "workspace:*",
-    "@mcceslint-config": "workspace:*",
-    "@mccprettier-config": "workspace:*",
-    "@mcctailwind-config": "workspace:*",
-    "@mcctsconfig": "workspace:*",
+    "@mcc/api": "workspace:*",
+    "@mcc/eslint-config": "workspace:*",
+    "@mcc/prettier-config": "workspace:*",
+    "@mcc/tailwind-config": "workspace:*",
+    "@mcc/tsconfig": "workspace:*",
     "@types/react": "catalog:react19",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "tailwindcss": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@mccprettier-config"
+  "prettier": "@mcc/prettier-config"
 }

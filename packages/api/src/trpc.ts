@@ -11,7 +11,7 @@ import superjson from "superjson";
 import { z, ZodError } from "zod/v4";
 
 import type { Auth } from "@mcc/auth";
-import { db } from "@mccdb/client";
+import { db } from "@mcc/db/client";
 
 /**
  * 1. CONTEXT

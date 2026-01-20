@@ -1,28 +1,35 @@
 {
-  "name": "@mcc/api",
+  "name": "@mcc/core",
   "private": true,
   "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
       "default": "./src/index.ts"
+    },
+    "./crypto": {
+      "types": "./dist/crypto.d.ts",
+      "default": "./src/crypto.ts"
+    },
+    "./protocol": {
+      "types": "./dist/protocol.d.ts",
+      "default": "./src/protocol.ts"
     }
   },
   "license": "MIT",
   "scripts": {
     "build": "tsc",
     "clean": "git clean -xdf .cache .turbo dist node_modules",
-    "dev": "tsc",
+    "dev": "tsc --watch",
     "format": "prettier --check . --ignore-path ../../.gitignore",
     "lint": "eslint --flag unstable_native_nodejs_ts_config",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "typecheck": "tsc --noEmit --emitDeclarationOnly false"
   },
   "dependencies": {
-    "@mcc/auth": "workspace:*",
-    "@mcc/db": "workspace:*",
-    "@mcc/validators": "workspace:*",
-    "@trpc/server": "catalog:",
-    "superjson": "2.2.3",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1",
     "zod": "catalog:"
   },
   "devDependencies": {
@@ -31,7 +38,8 @@
     "@mcc/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
-    "typescript": "catalog:"
+    "typescript": "catalog:",
+    "vitest": "^3.2.4"
   },
   "prettier": "@mcc/prettier-config"
 }

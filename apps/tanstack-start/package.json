@@ -13,12 +13,12 @@
     "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
-    "@mccapi": "workspace:*",
-    "@mccauth": "workspace:*",
-    "@mccdb": "workspace:*",
-    "@mccui": "workspace:*",
     "@fontsource-variable/geist": "^5.2.8",
     "@fontsource-variable/geist-mono": "^5.2.7",
+    "@mcc/api": "workspace:*",
+    "@mcc/auth": "workspace:*",
+    "@mcc/db": "workspace:*",
+    "@mcc/ui": "workspace:*",
     "@t3-oss/env-core": "^0.13.8",
     "@tanstack/react-form": "catalog:",
     "@tanstack/react-query": "catalog:",
@@ -37,10 +37,10 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@mcceslint-config": "workspace:*",
-    "@mccprettier-config": "workspace:*",
-    "@mcctailwind-config": "workspace:*",
-    "@mcctsconfig": "workspace:*",
+    "@mcc/eslint-config": "workspace:*",
+    "@mcc/prettier-config": "workspace:*",
+    "@mcc/tailwind-config": "workspace:*",
+    "@mcc/tsconfig": "workspace:*",
     "@tailwindcss/vite": "catalog:",
     "@types/node": "catalog:",
     "@types/react": "catalog:react19",
@@ -53,5 +53,5 @@
     "vite": "catalog:",
     "vite-tsconfig-paths": "^5.1.4"
   },
-  "prettier": "@mccprettier-config"
+  "prettier": "@mcc/prettier-config"
 }

@@ -17,20 +17,20 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "@mccdb": "workspace:*",
     "@better-auth/expo": "catalog:",
+    "@mcc/db": "workspace:*",
     "@t3-oss/env-core": "^0.13.8",
     "better-auth": "catalog:",
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@mcceslint-config": "workspace:*",
-    "@mccprettier-config": "workspace:*",
-    "@mcctsconfig": "workspace:*",
     "@better-auth/cli": "catalog:",
+    "@mcc/eslint-config": "workspace:*",
+    "@mcc/prettier-config": "workspace:*",
+    "@mcc/tsconfig": "workspace:*",
     "eslint": "catalog:",
     "prettier": "catalog:",
     "typescript": "catalog:"
   },
-  "prettier": "@mccprettier-config"
+  "prettier": "@mcc/prettier-config"
 }
