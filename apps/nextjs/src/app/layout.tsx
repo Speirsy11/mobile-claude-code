@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Create T3 Turbo",
     description: "Simple monorepo with shared backend for web & mobile apps",
-    url: "https://create-t3-turbo.vercel.app",
+    url: "https://mobile-claude-code.vercel.app",
     siteName: "Create T3 Turbo",
   },
   twitter: {
