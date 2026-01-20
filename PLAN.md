@@ -9,41 +9,41 @@ This document tracks the implementation progress for the Mobile Claude Code proj
 Create the shared `@mcc/core` package containing crypto, protocol definitions, and shared types.
 
 ### 1.1 Package Setup
-- [ ] Create `packages/core` directory structure
-- [ ] Set up `package.json` with dependencies (tweetnacl, zod)
-- [ ] Configure TypeScript and ESLint configs
-- [ ] Add package to workspace
+- [x] Create `packages/core` directory structure
+- [x] Set up `package.json` with dependencies (tweetnacl, zod)
+- [x] Configure TypeScript and ESLint configs
+- [x] Add package to workspace
 
 ### 1.2 Cryptography Module
-- [ ] Implement key pair generation using TweetNaCl
-- [ ] Implement NaCl Box encryption/decryption helpers
-- [ ] Implement ECDH shared secret derivation
-- [ ] Create signing and verification utilities
-- [ ] Add unit tests for all crypto functions
+- [x] Implement key pair generation using TweetNaCl
+- [x] Implement NaCl Box encryption/decryption helpers
+- [x] Implement ECDH shared secret derivation
+- [x] Create signing and verification utilities
+- [x] Add unit tests for all crypto functions
 
 ### 1.3 Protocol Types & Schemas
-- [ ] Define `SessionID` type and generation
-- [ ] Define handshake message schemas (Zod)
-  - [ ] `HandshakeInit` (desktop → mobile via QR)
-  - [ ] `HandshakeResponse` (mobile → desktop)
-  - [ ] `HandshakeComplete` (desktop → mobile)
-- [ ] Define encrypted message envelope schema
-- [ ] Define Claude Code event types
-  - [ ] `AgentState` (thinking, tool_use, idle, etc.)
-  - [ ] `PermissionRequest`
-  - [ ] `DiffContent`
-  - [ ] `ToolResult`
-  - [ ] `UserInput`
-- [ ] Define command types (mobile → desktop)
-  - [ ] `SendMessage`
-  - [ ] `ApprovePermission`
-  - [ ] `RejectPermission`
-  - [ ] `CancelOperation`
+- [x] Define `SessionID` type and generation
+- [x] Define handshake message schemas (Zod)
+  - [x] `HandshakeInit` (desktop → mobile via QR)
+  - [x] `HandshakeResponse` (mobile → desktop)
+  - [x] `HandshakeComplete` (desktop → mobile)
+- [x] Define encrypted message envelope schema
+- [x] Define Claude Code event types
+  - [x] `AgentState` (thinking, tool_use, idle, etc.)
+  - [x] `PermissionRequest`
+  - [x] `DiffContent`
+  - [x] `ToolResult`
+  - [x] `UserInput`
+- [x] Define command types (mobile → desktop)
+  - [x] `SendMessage`
+  - [x] `ApprovePermission`
+  - [x] `RejectPermission`
+  - [x] `CancelOperation`
 
 ### 1.4 QR Code Payload
-- [ ] Define QR code data structure (SessionID + PublicKey + RelayURL)
-- [ ] Implement serialization/deserialization
-- [ ] Add validation for QR payload
+- [x] Define QR code data structure (SessionID + PublicKey + RelayURL)
+- [x] Implement serialization/deserialization
+- [x] Add validation for QR payload
 
 ---
 
@@ -289,7 +289,7 @@ Prepare for production deployment and app distribution.
 
 | Epic | Status | Progress |
 |------|--------|----------|
-| 1. Core Package | Not Started | 0/17 |
+| 1. Core Package | ✅ Complete | 17/17 |
 | 2. Relay Server | Not Started | 0/19 |
 | 3. Desktop App | Not Started | 0/24 |
 | 4. Mobile App | Not Started | 0/26 |
@@ -297,4 +297,4 @@ Prepare for production deployment and app distribution.
 | 6. Security | Not Started | 0/12 |
 | 7. Testing | Not Started | 0/11 |
 | 8. Deployment | Not Started | 0/11 |
-| **Total** | **Not Started** | **0/130** |
+| **Total** | **In Progress** | **17/130** |
