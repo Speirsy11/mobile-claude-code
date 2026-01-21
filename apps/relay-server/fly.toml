@@ -1,0 +1,33 @@
+# fly.toml - Configuration for deploying to Fly.io
+# See https://fly.io/docs/reference/configuration/ for more info
+
+app = "mcc-relay"
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  LOG_LEVEL = "info"
+  SESSION_TTL_MS = "1800000"  # 30 minutes
+  HEARTBEAT_INTERVAL_MS = "30000"
+  CLEANUP_INTERVAL_MS = "60000"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 1
+  processes = ["app"]
+
+  [http_service.concurrency]
+    type = "connections"
+    hard_limit = 2500
+    soft_limit = 2000
+
+[[vm]]
+  memory = "256mb"
+  cpu_kind = "shared"
+  cpus = 1
